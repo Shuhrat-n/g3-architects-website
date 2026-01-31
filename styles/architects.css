@@ -105,6 +105,27 @@ max-width: 530px;
     font-weight: 500;
     font-size: 2.8rem;  
 }
+/* feature section related styles */
+#love-section-title{
+border-left: 5px solid #FF900E;
+padding-left: 20px;
+}
+.love-feature{
+    gap: 140px;
+}
+.love-card{
+     padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.love-card .love-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
 /* some fact related style */
 .facts-container{
     display: grid;
@@ -122,6 +143,7 @@ text-align: center;
 }
 .fact-description{
 max-width: 540px;
+margin-bottom: 50px;
 }
 .fact-num{
 font-size: 2.8rem;
