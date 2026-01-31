@@ -12,6 +12,13 @@
 .display-flex{
     display: flex;
 }
+.text-primary{
+    color: #FF900E;
+}
+.section-title{
+  font-size: 2.8rem;  
+  font-weight: 700;
+}
 /* dark 02 */
 .text-gray{
     color: #424242;
@@ -31,6 +38,13 @@ background-color: rgba(255, 144, 14, 0.1);
     font-weight: 600;
     border-radius: 8px;
     border: 0;
+ }
+ main{
+    max-width: 1440px;
+    margin: 0 auto;
+ }
+ main > section{
+    margin-top: 130px;
  }
 /* header styles */
 /* navbar related styles */
@@ -73,9 +87,46 @@ background-color: rgba(255, 144, 14, 0.1);
 .banner img{
     width: 100%;
 }
+/* team and feature related styles */
+.team{
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+gap: 24px;
+}
+.features{
+margin-left :130px ;
+max-width: 530px;
+}
+
+#quick-list{
+    font-weight: 500;
+    font-size: 2.8rem;  
+}
+
 /* repository media query */
 @media screen and (max-width: 576px){
-    .navbar, .nav-links{
+    .navbar, 
+    .nav-links, 
+    .team{
      flex-direction: column;
     }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .features{
+        margin-left: 20px;
+    }
+}
+/* medium size device */
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .team{
+        flex-direction: column;
+    }
+    .features{
+        margin: 50px auto;
+    }
+
 }
